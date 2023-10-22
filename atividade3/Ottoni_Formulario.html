@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ottoni - Formulário inicial</title>
+</head>
+
+<body>
+  <h1>Formulário de Contatos - Pessoal</h1>
+  <form>
+
+    <label>Nome do contato : </label>
+    <input type="text" id="nome" name="nome" autofocus value="Digite seu Nome" required />
+   
+    <br />
+    <br />
+
+    <label for="email">Email do Contato:</label>
+    <input type="email" id="email" name="email" placeholder="username@hostname" required/>
+    <br />
+    <br />
+
+    <label for="senha">Informe a Senha :</label>
+    <input type="password" id="senha" name="senha" placeholder="somente numeros" required/>
+    <br />
+    <br />
+
+    <label for="genero">Informe o genero:</label>
+    <select name="genero" id="genero">
+      <option value="M">Masculino</option>
+      <option value="F">Feminino</option>
+      <option value="N">Prefiro não informar</option>
+    </select>
+    <br />
+    <br />
+
+    <fieldset>
+        <legend>Meu Time em BH  :</legend>
+        <input type="radio" id="galo" name="timeBH" value="M">
+        <label for="galo">Atletico Mineiro</label><br />
+        <input type="radio" id="raposa" name="timeBH" value="F">
+        <label for="raposa">Cruzeiro</label><br />
+        <input type="radio" id="coelho" name="timeBH" value="F">
+        <label for="coelho">America</label><br />
+    </fieldset>
+
+    <br />
+    <br />
+
+    <label for="descricao">Porque este time:</label>
+    <textarea name="motivoTime" id="motivoTime" cols="50" rows="10">Descreva aqui porque voce ama este time...</textarea>
+    <br />
+    <br />
+
+    <label for="titulos">Quanto campeonatos estaduais seu time ganhou :</label>
+    <input type="number" id="titulos" name="titulos" min="1" max="100">
+    <br />
+    <br />
+
+    <label for="nota">De uma nota para o seugndo time do seu estado (Entre 0 and 5):</label>
+    <input type="range" id="nota" name="nota" min="0" max="5">
+    <br />
+    <br />
+
+    <label for="pagina_do_time">Qual o site do seu time:</label>
+    <input type="url" id="pagina_do_time" name="pagina_do_time">
+    <br />
+    <br />
+    
+
+    <button type="submit" onclick="alert('Confirme seu dados aqui!')"><b>CONFIRMA</b></button>
+    <button type="reset" onclick="alert('Quer mesmo apara seus dados')"><b>LIMPAR</b></button>
+    
+    <br />
+    <br />
+
+  </form>
+</body>
+
+</html>
