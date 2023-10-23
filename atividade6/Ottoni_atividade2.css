@@ -1,0 +1,14 @@
+p {font-family: Lucida Handwriting;
+    font-size: 20 pts;
+    color: rgba(36, 165, 53, 0.623) ;
+}
+ 
+ #div_cinza {
+    background-color: lightgray; 
+    text-align: center;
+}
+
+.lista li {
+    background-color: greenyellow; 
+    font-weight: bold;
+}
