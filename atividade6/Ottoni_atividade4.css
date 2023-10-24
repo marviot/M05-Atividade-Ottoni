@@ -28,8 +28,7 @@ P ~ #div_filha {
     font-weight: bold;
   }
 
-ul :first-child {
-    background-color: red;
+li :first-child {
+    background-color: greenyellow; 
     font-weight: bold;
 }
-
