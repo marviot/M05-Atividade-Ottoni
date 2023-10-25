@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <style>
+ 
+
+    .box1{
+      margin: 20px;
+    }
+
+    .box2{
+      margin: 10px, 20px, 5px, 30px;
+    }
+
+    .topo {
+      background-color: rgba(12, 102, 105, 0.9);
+      color: white;
+      margin: 0;
+      padding: 5px;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu ul li {
+      background-color: rgba(12, 152, 105, 0.7);
+      color: white;
+      margin: 5px 0;
+      padding: 3px;
+      text-align: center;
+      box-shadow: 2px 2px 2px lightgray;
+    }
+
+    .menu ul li:hover {
+      background-color:  rgba(12, 105, 87, 0.8);
+    }
+
+    .texto {
+      padding: 10px 0;
+      text-align: justify;
+    }
+
+    .divimg {
+      text-align: center;
+    }
+
+    .divimg img {
+      display: none;
+    }
+
+    .painel {
+      background-color: rgba(12, 152, 105, 0.7);
+      color: white;
+      margin: 0;
+      padding: 5px;
+      text-align: justify;
+    }
+
+    .rodape {
+      background-color: rgba(12, 102, 105, 0.9);
+      color: white;
+      margin: 0;
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* para celular */
+    [class*='col-'] {
+      width: 100%;
+    }
+
+    /* para tablets */
+    @media only screen and (min-width: 600px) {
+      .divimg img {
+        display: inline; 
+        max-width: 100%;
+        height: auto; 
+      }
+      .col-s-1 { width: 8.33%; }
+      .col-s-2 { width: 16.66%; }
+      .col-s-3 { width: 25%; }
+      .col-s-4 { width: 33.33%; }
+      .col-s-5 { width: 41.66%; }
+      .col-s-6 { width: 50%; }
+      .col-s-7 { width: 58.33%; }
+      .col-s-8 { width: 66.66%; }
+      .col-s-9 { width: 75%; }
+      .col-s-10 { width: 83.33%; }
+      .col-s-11 { width: 91.66%; }
+      .col-s-12 { width: 100%; }
+    }
+
+    /* para computador */
+    @media only screen and (min-width: 768px) {
+      .divimg img {
+        display: inline; 
+        max-width: 100%;
+        height: auto; 
+      }
+      .topo { font-size: 36px; }
+      .col-1 { width: 8.33%; }
+      .col-2 { width: 16.66%; }
+      .col-3 { width: 25%; }
+      .col-4 { width: 33.33%; }
+      .col-5 { width: 41.66%; }
+      .col-6 { width: 50%; }
+      .col-7 { width: 58.33%; }
+      .col-8 { width: 66.66%; }
+      .col-9 { width: 75%; }
+      .col-10 { width: 83.33%; }
+      .col-11 { width: 91.66%; }
+      .col-12 { width: 100%; }
+    }
+
+    [class*='col-'] {
+      float: left;
+      padding: 10px;
+    }
+
+    .meio::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="topo">
+    <h1>Responsive Web Design - RWD</h1>
+  </div>
+
+  <div class="meio">
+
+    <div class="menu col-s-3 col-3">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="texto col-s-9 col-6">
+      <h1>RWD</h1>
+      <p>As páginas da Web podem ser visualizadas em muitos dispositivos diferentes:
+        desktops, tablets e telefones. Sua página web deve ter uma boa aparência
+        e ser fácil de usar, independentemente do dispositivo.</p>
+      <div class="divimg">
+        <img src="rwd.jpeg" alt="RWD" width="620px" height="326px">
+      </div>
+    </div>
+
+    <div class="lateral col-s-12 col-3">
+      <div class="painel">
+        <h2>Como funciona?</h2>
+        <p>O design responsivo (RWD) faz com que sua página da web tenha uma boa aparência
+          em todos os dispositivos.</p>
+        <p>O RWD responsivo usa apenas HTML e CSS.</p>
+        <p>Web design responsivo não é um programa ou JavaScript.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape">
+    <p>Desmaximize e modifique o tamanho da janela do navegador para ver os efeitos de renderização.</p>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
