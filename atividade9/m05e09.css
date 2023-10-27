@@ -1,0 +1,122 @@
+body{
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cabecalho{
+    background-color: antiquewhite;
+    color:blue;
+    font-family: Futura, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding: 5px 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px lightskyblue , -2px 2px 2px lightskyblue ,2px -2px 2px lightskyblue, -2px -2px 2px lightskyblue;;
+}
+
+.menu ul {
+    list-style-type:none; 
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li{
+    height: 20px;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    background-color: brown;
+    text-align: center;
+    align-items: center;
+    color: white;
+    /*width: 33.33%;
+    box-sizing: border-box;*/
+
+}
+
+.menu li:nth-child(1) { 
+    background-color: rgb(42, 181, 241); 
+    position: fixed;
+    top: 150px}
+.menu li:nth-child(2) { 
+    background-color: rgb(181, 241, 42); 
+    position: fixed;
+    top: 170px}
+.menu li:nth-child(3) { 
+    background-color: rgb(241, 42, 181);  
+    position: fixed;
+    top: 190px}
+
+.texto{
+  max-width: calc(100% - 600px);
+  margin: auto;
+}
+
+.texto h2 {
+    text-align: center;
+    color:rgb(9, 75, 3)
+}
+
+.tabela{
+    max-width: calc(100% - 600px);
+    margin: auto;
+    text-align: left;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 40px;
+  }
+  
+  .tabela h2 {
+      text-align: center;
+      color:rgb(12, 62, 168)
+  }
+
+  .tabela table{
+    display: flex;
+    justify-content: center;
+  }
+
+  .tabela th {
+    margin: 0px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: orange;
+    text-align: center;
+  }
+.tabela tr:hover {
+    background-color: yellow;
+}
+  .tabela td {
+    margin: 0px;
+   border: 1px solid black;
+   padding: 8px;
+   
+}
+
+#pnl button{
+    background-color: black;
+    color: white;
+    box-shadow: 5px red;
+    margin: 20px;
+}
+
+
+#pnl{
+    max-width: calc(100% - 600px);
+    margin: auto;
+}
+
+.rodape{
+    background-color: gray;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.rodape a {
+    color:white;
+    text-decoration: none;
+
+}
+.rodape:hover {
+  background-color: wheat;
+  color: black
+}
