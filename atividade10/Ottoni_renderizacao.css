@@ -1,0 +1,196 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.topo {
+  background-color: rgba(12, 102, 105, 0.9);
+  color: white;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.titulo {
+    font-size: 36px;
+    color: #00FF00; /* Verde da paleta de cores Codefico */
+    text-shadow: 2px 2px 2px rgb(144, 243, 51) , -2px 2px 2px rgb(144, 243, 51) ,2px -2px 2px rgb(144, 243, 51), -2px -2px 2px rgb(144, 243, 51); /* Sombreamento em preto */
+    background-color: #000000; /* Fundo preto */
+    text-align: center;
+    padding: 5px; /* Espaçamento interno */
+  }
+  
+  /* Estilização para a classe menu */
+  .menu ul {
+    margin: 0;
+    padding: 0;
+   }
+   
+    /* Estilização para a classe menu - li */
+   .menu li {
+     list-style-type: none;
+     padding: 5px;
+     margin: 0;
+     float: left;
+     text-align: center;
+     width: 25%;
+     box-sizing: border-box;
+     background-color: aquamarine;
+   }
+   
+   .menu li:hover {
+     background-color:  gray;
+   }
+   
+   .menu li a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+   }
+  
+  /* Efeito hover para os itens do menu */
+  .menu a:hover {
+    color: #005700; /* Verde mais escuro */
+  }
+
+  /* Estilização para as classes sobre e requisitos */
+  .sobre, .requisitos {
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+/* section texto inline para colocar as divs uma ao lado da outra*/
+.texto {
+  display: inline-flex;
+}
+
+  /* Cores diferentes para as classes sobre e requisitos */
+.sobre {
+ 
+    width: calc(50% - 10px); /* 50% do espaço com 10px de espaçamento */
+    float: left;
+    background-color: #e26666; /* Cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+  }
+.sobre h2{
+    color: #000000;
+  }
+  .requisitos {
+   
+    width: calc(50% - 10px); /* 50% do espaço com 10px de espaçamento */
+    float: left;
+    background-color: #47be47; /* Cinza médio */
+    color: #FFFFFF; /* Texto branco */
+  }
+  
+  .requisitos h2 {
+    color: #000000;
+  }
+/* centralizando a logo*/
+.logo{
+  text-align: center;
+  
+}
+.texto {
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.divimg {
+  text-align: center;
+}
+
+.divimg img {
+  display: none;
+}
+
+.painel {
+  background-color: rgba(12, 152, 105, 0.7);
+  color: white;
+  margin: 0;
+  padding: 5px;
+  text-align: justify;
+}
+
+.rodape {
+  background-color: rgba(12, 102, 105, 0.9);
+  color: white;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* para celular */
+@media only screen and (max-width: 767px) {
+[class*='col-'] {
+  width: 100%;
+  .texto {
+    padding: 10px 0;
+    text-align: justify;
+    display: block;
+  }
+  .sobre, .requisitos {
+    padding: 0px; /* Espaçamento interno */
+    display: block;
+  }
+  .logo{
+    display: none;
+  }
+}
+
+/* para tablets */
+@media only screen and (min-width: 600px) {
+  .divimg img {
+    display: inline; 
+    max-width: 100%;
+    height: auto; 
+  }
+  .col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33.33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 { width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+}
+
+/* para tablet  */
+@media only screen and (min-width: 768px) {
+  .divimg img {
+    display: inline; 
+    max-width: 100%;
+    height: auto; 
+  }
+  .topo { font-size: 36px; }
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 10px;
+}
+
+.meio::after {
+  content: '';
+  clear: both;
+  display: table;
+}
