@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+}
+
+/* Estilização para a classe titulo */
+.titulo {
+    font-size: 48px;
+    color: #00FF00; /* Verde da paleta de cores Codefico */
+    text-shadow: 2px 2px 2px rgb(144, 243, 51) , -2px 2px 2px rgb(144, 243, 51) ,2px -2px 2px rgb(144, 243, 51), -2px -2px 2px rgb(144, 243, 51); /* Sombreamento em preto */
+    background-color: #000000; /* Fundo preto */
+    text-align: center;
+    padding: 20px; /* Espaçamento interno */
+  }
+  
+  /* Estilização para a classe menu */
+  .menu ul {
+    margin: 0;
+    padding: 0;
+   }
+   
+    /* Estilização para a classe menu - li */
+   .menu li {
+     list-style-type: none;
+     padding: 5px;
+     margin: 0;
+     float: left;
+     text-align: center;
+     width: 25%;
+     box-sizing: border-box;
+     background-color: aquamarine;
+   }
+   
+   .menu li:hover {
+     background-color:  gray;
+   }
+   
+   .menu li a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+   }
+  
+  /* Efeito hover para os itens do menu */
+  .menu a:hover {
+    color: #005700; /* Verde mais escuro */
+  }
+  
+  /* Estilização para as classes sobre e requisitos */
+  .sobre, .requisitos {
+    margin: 3px solid black;
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  /* Cores diferentes para as classes sobre e requisitos */
+.sobre {
+    width: calc(50% - 10px); /* 50% do espaço com 10px de espaçamento */
+    float: left;
+    background-color: #333333; /* Cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+  }
+  
+  .requisitos {
+    width: calc(50% - 10px); /* 50% do espaço com 10px de espaçamento */
+    float: left;
+    background-color: #666666; /* Cinza médio */
+    color: #FFFFFF; /* Texto branco */
+  }
+  
+  /* Estilização para a classe certificado (rodapé) */
+  .certificado {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #555555; /* Cinza */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center;
+    padding: 10px; /* Espaçamento interno */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cores */
+  }
+  
+  
+  
+  
