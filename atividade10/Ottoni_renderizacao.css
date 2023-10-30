@@ -126,7 +126,7 @@ body {
 /* para celular */
 @media only screen and (max-width: 767px) {
 [class*='col-'] {
-  width: 100%;
+  width: 100%;}
   .texto {
     padding: 10px 0;
     text-align: justify;
