@@ -1,0 +1,62 @@
+form {
+  background-color: rgb(14, 249, 171);
+  border: 1px solid black;
+  margin: 0;
+  padding: 20px;
+  width: 700px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+form > label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  display: block;
+  margin: 10px 0;
+  padding: 0;
+  text-align: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+form > label > span {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 100px;
+}
+
+input, select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  width: 537px;
+  margin: 0;
+  border: none;
+}
+
+select {
+  width: 541px;
+}
+
+input[type='radio'] {
+  width: 20px;
+  margin: 0;
+}
+
+button {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 700px;
+  background-color: rgb(0, 120, 0);
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(0, 90, 0);
+}

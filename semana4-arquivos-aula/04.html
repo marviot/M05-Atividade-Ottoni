@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    div {
+      width: 300px;
+      height: 50px;
+      padding: 20px;
+      margin: 30px;
+      text-align: center;
+      border: 3px solid black;
+    }
+
+    div>p {
+      margin: 0;
+    }
+  </style>
+
+</head>
+<body onload="aoCarregarAPagina()">
+
+  <p></p>
+
+  <p>
+    Evento onchange:
+    <input type="text" onchange="upperCase(this)">
+  </p>
+
+  <p>
+    Evento oninput:
+    <input type="text" oninput="upperCase(this)">
+  </p>
+
+  <p>
+    Evento onkeydown (ao pressionar qualquer tecla):
+    <input type="text" onkeydown="tecla(this)"><span></span>
+  </p>
+
+  <p>
+    Evento onkeypress (ao precionar uma tecla de caracteres):
+    <input type="text" onkeypress="tecla(this)"><span></span>
+  </p>
+
+  <p>
+    Evento onkeyup (depois de qualquer tecla):
+    <input type="text" onkeyup="tecla(this)"><span></span>
+  </p>
+
+  <div onmouseover="mOver(this)" onmouseout="mOut(this)">
+    Mouse fora
+  </div>
+
+  <div class="droptarget" ondrop="drop(event)" ondragover="dragOver(event)">
+    <p ondragstart="dragStart(event)" ondrag="dragging()" draggable="true"
+      id="dragtarget">Me arraste!</p>
+  </div>
+
+  <p id="entredivs"></p>
+
+  <div class="droptarget" ondrop="drop(event)" ondragover="dragOver(event)">
+  </div>
+
+  <script>
+    function upperCase(elemento) {
+      elemento.value = elemento.value.toUpperCase();
+    }
+
+    function tecla(e) {
+      e.nextSibling.innerHTML = 'Conteúdo do input: ' + e.value;
+    }
+
+    function mOver(e) {
+      e.innerHTML = 'Mouse dentro';
+    }
+
+    function mOut(e) {
+      e.innerHTML = 'Mouse fora';
+    }
+
+    function dragStart(event) {
+      event.dataTransfer.setData('text', event.target.id);
+    }
+
+    function dragging() {
+      document.getElementById('entredivs').innerHTML =
+        'O elemento está sendo arrastado.';
+    }
+
+    function dragOver(event) {
+      event.preventDefault();
+    }
+
+    function drop(event) {
+      const id = event.dataTransfer.getData('text');
+      event.target.appendChild(document.getElementById(id));
+      document.getElementById('entredivs').innerHTML =
+        'O elemento foi solto.';
+    }
+
+    function aoCarregarAPagina() {
+      document.body.firstElementChild.innerHTML =
+        navigator.cookieEnabled ?
+          'Coockies estão habilitados' :
+          'Coockies estão desabilitados';
+    }
+
+  </script>
+
+</body>
+</html>

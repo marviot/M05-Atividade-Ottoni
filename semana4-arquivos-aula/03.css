@@ -1,0 +1,28 @@
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: rgb(0, 200, 200);
+  float: left;
+}
+
+#conteudo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: rgb(21, 17, 70);
+}
+
+input[type=range] {
+  cursor: pointer;
+}
+
+#sliderh {
+  width: 400px;
+}
+
+#sliderv {
+  appearance: slider-vertical;
+  float: left;
+  height: 400px;
+}

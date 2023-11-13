@@ -1,0 +1,22 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+#intro {
+  background-color: aquamarine;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5px;
+}
+
+#intro h1 {
+  color: purple;
+}
+
+#sec2 {
+  background-color: coral;
+  border: 2px solid darkred;
+  padding: 20px;
+  margin: 5px;
+}

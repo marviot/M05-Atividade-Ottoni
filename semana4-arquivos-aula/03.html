@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="03.css" />
+</head>
+<body>
+
+  <p>
+    <button onclick="movimentar()">Clique para movimentar</button>
+  </p>
+  <p>
+    <input type="range" min="0" max="350" value="0" id="sliderh" name="sliderh"
+      oninput="deslizar()" />
+  </p>
+
+  <div id="container">
+    <div id="conteudo"></div>
+  </div>
+  <input type="range" orient="vertical" min="0" max="350" value="350"
+    id="sliderv" name="sliderv" oninput="deslizar()" />
+  <script>
+    function movimentar() {
+      let id = null;
+      let pos = 0;
+      const ct = document.getElementById("conteudo");
+      clearInterval(id);
+      id = setInterval(movimento, 50);
+      function movimento() {
+        if (pos == 350) {
+          clearInterval(id);
+        }
+        else {
+          pos++;
+          ct.style.left = pos + 'px';
+          ct.style.top = pos + 'px';
+        }
+      }
+    }
+
+    function deslizar() {
+      const ct = document.getElementById("conteudo");
+      const sh = document.getElementById("sliderh");
+      const sv = document.getElementById("sliderv");
+      ct.style.left = sh.value + 'px';
+      ct.style.top = 350 - sv.value + 'px';
+    }
+  </script>
+</body>
+</html>

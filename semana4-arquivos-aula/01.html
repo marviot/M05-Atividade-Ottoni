@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="01.css" />
+  <title>HTML DOM</title>
+
+</head>
+<body>
+
+  <div id="intro">
+    <h1 id="h1html">HTML</h1>
+    <p>Quando uma página é carregada, o <b>navegador</b> o Document
+      Object Model (DOM)dela. A partir do DOM é possível: </p>
+    <ul>
+      <li>Acessar e alterar o conteúdo de elementos existentes na página;</li>
+      <li>Remover e adicionar elementos na página;</li>
+      <li>Acessar, alterar e adicionar estilo (CSS) aos elementos na página;
+      </li>
+      <li>Manipular eventos relacionados aos elementos na página.</li>
+    </ul>
+    <p class="paragrafo">Os elementos HTML também podem ser acessados por meio
+      métodos e objetos do DOM.</p>
+    <p class="paragrafo">Os elementos HTML podem ter suas propriedades e
+      atributos manipulados.</p>
+  </div>
+  <input type="text" id="input1" />
+  <button onclick="ajustaSec2()">Clique aqui para ajustar cor de fundo</button>
+  <input type="text" id="input2" />
+  <button onclick="ajustaBordaSec2()">Clique aqui para ajusar a borda</button>
+  <button onclick="escondeSec2()">Clique aqui para mostrar/ocultar a div
+    sec2</button>
+  <div id="sec2"></div>
+
+</body>
+</html>
+<script src="01b.js"></script>

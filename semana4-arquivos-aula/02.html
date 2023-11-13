@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="02.css" />
+  <title>Formulário de cadastro</title>
+  <script src="02.js"></script>
+</head>
+
+<body>
+  <form name="formcad">
+    <label>
+      <span>Nome:</span>
+      <input type="text" id="nome" name="nome" autofocus required />
+    </label>
+    <label>
+      <span>Email:</span>
+      <input type="email" id="email" name="email" />
+    </label>
+    <label>
+      <span>Nascimento:</span>
+      <input type="date" id="nasc" name="nasc" />
+    </label>
+    <label>
+      <span>Gênero:</span>
+      <input type="radio" id="generom" name="genero" value="M" />
+      <label for="rgenerom">Masculino</label>
+      <input type="radio" id="generof" name="genero" value="F" />
+      <label for="rgenerof">Feminino</label>
+    </label>
+    <label>
+      <span>Cidade:</span>
+      <select name="cidade" id="cidade">
+        <option value="São João del-Rei">São João del-Rei</option>
+        <option value="São Paulo">São Paulo</option>
+        <option value="Belo Horizonte">Belo Horizonte</option>
+      </select>
+    </label>
+  </form>
+  <button onclick="cadastrar()">Cadastrar</button>
+  <button onclick="criarJSON()">Criar JSON</button>
+</body>
+
+</html>
