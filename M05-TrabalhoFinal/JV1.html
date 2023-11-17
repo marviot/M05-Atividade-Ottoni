@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="JV1.css">
+  <title>Jogo da Velha</title>
+</head>
+<body>
+   <header> 
+        <h1>Jogo da Velha</h1>
+        <div>Informe o nome do primeiro jogador : <input type="text" id="jogador1" placeholder="Jogador 1" maxlength="10"></div>
+        <div>Informa o nome do segundo  jogador : <input type="text" id="jogador2" placeholder="Jogador 2" maxlength="10"></div>
+        <p></p>
+        <button id="start">Iniciar jogo</button>
+        <button id="restart">Reniciar sequencia</button>
+    
+        <div id="game-info">
+            <div id="player-turn" class="player-turn">
+                <p>Vez do jogador: <span id="player-turn-mark"></span></p>
+            </div>
+            <div id="game-status" class="game-status">
+                <p id="game-status-text"></p>
+            </div>
+        </div>
+    </header>
+  
+    <div id="gameboard" class="minimalist">
+    </div>
+
+   <footer>
+        <div id="scoreboard">
+            <p id="jogador1">Jogador <span id='jog1'>Jogador 1</span> - <span id='vit1'>N</span> vitórias</p>
+            <p id="jogador2">Jogador <span id='jog2'>Jogador 2</span> - <span id='vit2'>N</span> vitórias</p>
+        </div>
+    </footer>
+    
+  <script src="JV1.js"></script>
+</body>
+</html>
