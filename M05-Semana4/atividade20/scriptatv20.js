@@ -95,6 +95,12 @@ let clickCounter    = 0;
 btnChallenge.addEventListener("click", function() {
     clickCounter++;
     document.getElementById("count").innerHTML = clickCounter;
+});  //Fim do evento de clique no botão "Desafio Extconst btnChallenge = document.getElementById("btnChallenge");
+let clickCounter    = 0;
+
+btnChallenge.addEventListener("click", function() {
+    clickCounter++;
+    document.getElementById("count").innerHTML = clickCounter;
 });  //Fim do evento de clique no botão "Desafio Extra"
 
 setTimeout(function() {
